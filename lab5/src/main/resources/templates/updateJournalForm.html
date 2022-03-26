@@ -1,0 +1,34 @@
+<!Doctype html>
+<html lang="en-US" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Agregar entrada al Spring Journal</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous" />
+</head>
+<body>
+<h1>Actualizar journal</h1>
+<div class="container">
+
+    <form action="#" th:action="@{/update/{id}(id=${journal.id})}" th:object="${journal}" method="POST">
+
+        <!-- Add hidden form field to handle update -->
+        <input type="hidden" th:field="*{id}" />
+
+        <input type="text" th:field="*{title}" class="form-control mb-4 col-4">
+
+        <input type="text" th:field="*{created}" class="form-control mb-4 col-4" readonly>
+
+        <input type="text" th:field="*{summary}" class="form-control mb-4 col-4">
+
+        <button type="submit" class="btn btn-info col-2">Update</button>
+    </form>
+
+    <hr>
+
+    <a href="/">Back to list</a>
+</div>
+
+</body>
+</html>
