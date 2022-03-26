@@ -1,0 +1,8 @@
+Daniel Zúñiga Rojas
+Componentes
+Laboratorio 5
+
+Incluye el ejemplo de journal realizado en clase junto con put y delete extra con su página y un poco de bootstrap.
+En la otra carpeta se encuentra el mismo ejercicio con la clase persona y bootstrap. Incluye get, save, put y delete también. 
+
+Link repositorio: https://github.com/DanielGit28/Lab-5
